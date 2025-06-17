@@ -1,68 +1,68 @@
-🚀 Bitcoin Fee Prediction Website
-This project presents a machine learning-powered web application that accurately predicts Bitcoin transaction fees based on transaction attributes like size, weight, input/output count, and fee rate per kilobyte. The goal is to help users optimize transaction costs by estimating appropriate fees in real-time.
+### Bitcoin Fee Prediction Website ###
+This project is a machine learning-based web application that predicts Bitcoin transaction fees using transaction-specific attributes such as size, weight, number of inputs/outputs, and fee per kilobyte. It aims to help users estimate optimal fees for faster and more cost-effective confirmations.
 
-🔍 Overview
-Problem: Bitcoin transaction fees can fluctuate significantly, and setting an inappropriate fee can result in delayed confirmations or unnecessary cost.
+## Overview ##
+Problem: Bitcoin fees vary with network congestion, and choosing the wrong fee can lead to delays or overpayment.
 
-Solution: This tool uses a trained deep neural network (DNN) model to predict the expected transaction fee using historical blockchain data.
+Solution: A deep learning model predicts the required transaction fee using historical data.
 
-🧠 Machine Learning
-A deep neural network was trained using over 900,000 real Bitcoin transactions.
+## Machine Learning ##
+Trained on over 900,000 Bitcoin transactions
 
-Features used:
+# Features: #
 
 Transaction size
 
 Weight
 
-Number of inputs/outputs
+Number of inputs and outputs
 
 Fee per KB
 
-All data was preprocessed with log transformation and standardized using StandardScaler.
+Data was log-transformed and scaled using StandardScaler.
 
-📊 Performance
+# Model Performance #
 R² Score: 0.9992
 
-MAE: ~21.55 sats
+Mean Absolute Error (MAE): ~21.55 sats
 
-Accuracy (±2%): ~98%
+Accuracy within ±2%: ~98%
 
-🌐 Web Interface (Optional if applicable)
-If hosted as a web application (e.g., via Streamlit or Flask), users can:
+Web Interface (if applicable)
+The optional web app allows users to:
 
-Input transaction details
+Input transaction attributes
 
-Get predicted fee instantly
+Instantly receive a fee prediction
 
 Estimate potential fee savings
 
-📂 Files & Structure
-transaction_data.csv – Raw data
+## Project Structure ##
+transaction_data.csv – Raw dataset
 
 new_transaction_model.keras – Trained DNN model
 
-scaler123.pkl – Standard scaler used for preprocessing
+scaler123.pkl – Preprocessing scaler
 
-notebooks/ – All model training and evaluation steps in Jupyter Notebooks
+notebooks/ – Jupyter notebooks for training and evaluation
 
-predict.py or app.py – Script to run the prediction engine or web app (if implemented)
+app.py or predict.py – Script for running predictions or web interface
 
-📈 Technologies Used
+## Technologies Used ##
 Python, TensorFlow, Keras
 
 Pandas, NumPy, Scikit-learn
 
-Matplotlib, Seaborn (for analysis)
+Matplotlib, Seaborn
 
-(Optional) Streamlit or Flask for frontend
+(Optional) Streamlit or Flask for UI
 
-✅ How to Run
-Clone the repo
+## How to Run ##
+Clone the repository
 
-Install required packages from requirements.txt
+Install dependencies 
 
-Load model and scaler
+Load the model and scaler
 
-Run the prediction script or web interface
+Run app.py (or your prediction script)
 
