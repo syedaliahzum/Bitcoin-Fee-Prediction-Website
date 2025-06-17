@@ -1,4 +1,4 @@
-### Bitcoin Fee Prediction Website ###
+# Bitcoin Fee Prediction Website #
 This project is a machine learning-based web application that predicts Bitcoin transaction fees using transaction-specific attributes such as size, weight, number of inputs/outputs, and fee per kilobyte. It aims to help users estimate optimal fees for faster and more cost-effective confirmations.
 
 ## Overview ##
@@ -9,7 +9,7 @@ Solution: A deep learning model predicts the required transaction fee using hist
 ## Machine Learning ##
 Trained on over 900,000 Bitcoin transactions
 
-# Features: #
+### Features: ###
 
 Transaction size
 
@@ -21,7 +21,7 @@ Fee per KB
 
 Data was log-transformed and scaled using StandardScaler.
 
-# Model Performance #
+### Model Performance ###
 R² Score: 0.9992
 
 Mean Absolute Error (MAE): ~21.55 sats
